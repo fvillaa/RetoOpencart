@@ -1,1 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="filtroOpencart" skipped="0" tests="1" time="28.59" timestamp="2022-05-04 05:03:45"><testcase name="As a user, I want to consult through filters the information of the Product Returns"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="filtroOpencart" skipped="0" tests="3" time="67.89" timestamp="2022-05-04 05:39:11"><testcase name="As a user, I want to consult through filters the information of the Product Returns"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+co.com.choucair.certification.retoopencart.taks.FiltroOpencart.performAs(FiltroOpencart.java:45)&#13;
+co.com.choucair.certification.retoopencart.stepdefinitions.FiltroOpencartStepDefinitions.consultTheInformationOfTheProductReturnDepartment(FiltroOpencartStepDefinitions.java:26)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>

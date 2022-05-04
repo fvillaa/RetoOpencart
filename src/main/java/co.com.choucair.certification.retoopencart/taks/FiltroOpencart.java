@@ -31,26 +31,13 @@ public class FiltroOpencart implements Task {
         actor.attemptsTo(Enter.theValue(dataOpencart.getPassword()).into(FiltroOpencartPage.INPUT_PASSWORD));
         actor.attemptsTo(Click.on(FiltroOpencartPage.PRESS_LOGIN_BUTTON));
         actor.attemptsTo(Click.on(FiltroOpencartPage.PRESS_MENU_SALE));
-        if (dataOpencart.getOption_sales().equals("Orders")) {
-            actor.attemptsTo(Click.on(FiltroOpencartPage.OPTION_ORDERS));
-        }
-
-        if (dataOpencart.getOption_sales().equals("Returns")) {
-            actor.attemptsTo(Click.on(FiltroOpencartPage.OPTION_RETURNS));
-        }
-
-        if (dataOpencart.getOption_sales().equals("Gift Vouchers")) {
-                    actor.attemptsTo(Click.on(FiltroOpencartPage.OPTION_GIFT_VOUCHERS));
-            }
-
-
-            //actor.attemptsTo(Click.on(FiltroOpencartPage.OPTION_RECURRING_PROFILES));
-            //actor.attemptsTo(SelectFromOptions.byVisibleText(dataOpencart.getOption_sales()).from(FiltroOpencartPage.PRESS_OPTION_RETURNS));
-            actor.attemptsTo(Enter.theValue(dataOpencart.getReturn_id()).into(FiltroOpencartPage.INPUT_RETURN_ID));
+        OptionsSales(actor);
+        actor.attemptsTo(Enter.theValue(dataOpencart.getReturn_id()).into(FiltroOpencartPage.INPUT_RETURN_ID));
             actor.attemptsTo(Enter.theValue(dataOpencart.getOrder_id()).into(FiltroOpencartPage.INPUT_ORDER_ID));
             actor.attemptsTo(Enter.theValue(dataOpencart.getCustomer()).into(FiltroOpencartPage.INPUT_CUSTOMER));
             actor.attemptsTo(Enter.theValue(dataOpencart.getProduct()).into(FiltroOpencartPage.INPUT_PRODUCT));
             actor.attemptsTo(Enter.theValue(dataOpencart.getModel()).into(FiltroOpencartPage.INPUT_MODEL));
+            actor.attemptsTo(Click.on(FiltroOpencartPage.CLICK));
             actor.attemptsTo(Click.on(FiltroOpencartPage.SELECT_STATUS));
             actor.attemptsTo(Hit.the(Keys.ARROW_DOWN).into(FiltroOpencartPage.SELECT_STATUS));
             actor.attemptsTo(Hit.the(Keys.ENTER).into(FiltroOpencartPage.SELECT_STATUS));
@@ -62,7 +49,21 @@ public class FiltroOpencart implements Task {
                 actor.attemptsTo(Click.on(FiltroOpencartPage.CLICK_LAST_PAGE));
             }
         }
+
+    private <T extends Actor> void OptionsSales(T actor) {
+        if (dataOpencart.getOption_sales().equals("Orders")) {
+            actor.attemptsTo(Click.on(FiltroOpencartPage.OPTION_ORDERS));
+        }
+
+        if (dataOpencart.getOption_sales().equals("Returns")) {
+            actor.attemptsTo(Click.on(FiltroOpencartPage.OPTION_RETURNS));
+        }
+
+        if (dataOpencart.getOption_sales().equals("Gift Vouchers")) {
+                    actor.attemptsTo(Click.on(FiltroOpencartPage.OPTION_GIFT_VOUCHERS));
+            }
     }
+}
 
 
 

@@ -31,6 +31,8 @@ public class FiltroOpencartPage extends PageObject {
             .located(By.id("input-product"));
     public static final Target INPUT_MODEL = Target.the("Input Model")
             .located(By.id("input-model"));
+    public static final Target CLICK = Target.the("Click")
+            .located(By.id("filter-return"));
     public static final Target SELECT_STATUS = Target.the("Input Model")
             .located(By.xpath("//select[@id='input-return-status']"));
     public static final Target CLICK_BUTTON_FILTER = Target.the("Input Model")
