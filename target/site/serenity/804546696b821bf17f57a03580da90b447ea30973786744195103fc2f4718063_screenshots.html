@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Demo Project using Serenity and Cucumber</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="440e389a500eff032dcec57b781feba933ab8bcfd34c30f43a817d679cebdcaf.html">Filtro Opencart</a></span>
+                > <span class="truncate-60"><a
+                    href="804546696b821bf17f57a03580da90b447ea30973786744195103fc2f4718063.html">As a user, I want to consult through filters the information of the Product Returns </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 04-05-2022 17:03</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Filtro Opencart </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="8e3b9bd5eba0a2d944ce7d2a73335e57289cd25f71e556e1618e946dc87d7ec9.html">Stories
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">As a user, I want to consult through filters the information of the Product Returns
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given User of the Opencart page<br>When Consult the information of the product return department<br><table class='embedded'><thead><th>username</th><th>password</th><th>option_sales</th><th>return_id</th><th>order_id</th><th>customer</th><th>product</th><th>model</th><th>status</th><th>info_pages</th></thead><tbody><tr><td>&lt;username&gt;</td><td>&lt;password&gt;</td><td>&lt;option_sales&gt;</td><td>&lt;return_id&gt;</td><td>&lt;order_id&gt;</td><td>&lt;customer&gt;</td><td>&lt;product&gt;</td><td>&lt;model&gt;</td><td>&lt;status&gt;</td><td>&lt;info_pages&gt;</td></tr></tbody></table><br>Then Know the list of existing products in return</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="2cf9f106118a4108a629f79e91e1a31782c2acb6405be993f626113a099a0d6d.png" title=" Example: {username=demo, password=demo, option_sales=Returns, return_id=38591, order_id=16537, customer=wdsqa ascas, product=HP LP3065, model=Product 21, status=Awaiting Products, info_pages=Showing 1 to 1 of 1 (1 Pages)}" width="1366"/>
+                <img src="2cf9f106118a4108a629f79e91e1a31782c2acb6405be993f626113a099a0d6d.png" title=" Given User of the Opencart page" width="1366"/>
+                <img src="2cf9f106118a4108a629f79e91e1a31782c2acb6405be993f626113a099a0d6d.png" title=" Fernando open up" width="1366"/>
+                <img src="2cf9f106118a4108a629f79e91e1a31782c2acb6405be993f626113a099a0d6d.png" title=" Fernando opens the Open page" width="1366"/>
+                <img src="43a5ae9d419ef73d8fae69a96b5cce29c13a1426b0d7d9ace9536629a3de53e0.png" title=" Fernando open up (completed)" width="1034"/>
+                <img src="d37066bf1aaad08ffc5fb6a6553acdaf3b47185302102113056f7a6c90ae0119.png" title=" Given User of the Opencart page (completed)" width="1366"/>
+                <img src="6ae890b09f600b09ccfe564a471155458cde7dc68daf6db742ad7312d2204e35.png" title=" When Consult the information of the product return department
+| username | password | option_sales | return_id | order_id | customer | product | model | status | info_pages |
+| demo | demo | Returns | 38591 | 16537 | wdsqa ascas | HP LP3065 | Product 21 | Awaiting Products | Showing 1 to 1 of 1 (1 Pages) |" width="1366"/>
+                <img src="6ae890b09f600b09ccfe564a471155458cde7dc68daf6db742ad7312d2204e35.png" title=" Fernando filtro opencart" width="1366"/>
+                <img src="6ae890b09f600b09ccfe564a471155458cde7dc68daf6db742ad7312d2204e35.png" title=" Fernando enters 'demo' into Enter username" width="1366"/>
+                <img src="46ed8f92daed19dfd4e0b377e8e883d0f50bcac41b2ab1f9111a7e5233249d3e.png" title=" Fernando enters 'demo' into Enter password" width="1366"/>
+                <img src="a3c4df0e6c66850d9a896e1f65198f0108b59416ce87dcd98a8eb01d14dcd57c.png" title=" Fernando clicks on Press login button" width="1366"/>
+                <img src="fd612d410cf332a3267a2c8b3d0614c2632020f3a1bdb225c7634b68b19da2dd.png" title=" Fernando clicks on Press menu sale" width="1366"/>
+                <img src="a9f676c14b61d1fbbec8bd95a31913ac8aff775e617c50c48083cce209fad6e0.png" title=" Fernando clicks on Press option returns" width="1366"/>
+                <img src="8f3744f8b4b3609dbef5c75e9cb3568cd8120742f27d9ab12203746d5ac739f3.png" title=" Fernando enters '38591' into Input returns ID" width="1366"/>
+                <img src="1b44ecc41ddc2fd5741b96ed73f2b39546394f8b65555015632391aab2b31d10.png" title=" Fernando enters '16537' into Input Order ID" width="1366"/>
+                <img src="b7041747988c5ce930bf54b9eb74066b7cd6f2cd33ea5437621169c29af971bb.png" title=" Fernando enters 'wdsqa ascas' into Input Customer" width="1366"/>
+                <img src="4b5c0d75bd32766fbc6f19abd81e179d3aa4df7185c1549defea39bd643831ed.png" title=" Fernando enters 'HP LP3065' into Input Product" width="1366"/>
+                <img src="3a5016f4b37a353dafe9b0a6fd835f3d47e33ae8f0f0043c8a4e34919a677719.png" title=" Fernando enters 'Product 21' into Input Model" width="1366"/>
+                <img src="c7b2e10984a8ee308b74d549222ed1dbdea3f12fac4814298111ac560a3cf077.png" title=" Fernando clicks on Input Model" width="1366"/>
+                <img src="63aee28265a2644bddfe2a4ce4ddf445c4a3b170ccb7ad25e673aeecb6f5e87c.png" title=" Fernando types 'ARROW_DOWN' in Input Model" width="1366"/>
+                <img src="6626568a6c63515f9fd180572e37a5e1156ca6129fe02e8e627787cb70829e8b.png" title=" Fernando types 'ENTER' in Input Model" width="1366"/>
+                <img src="d91f13af8d9320ab966fbb781d21f9698554bdc9afa6861e7feac546c59e8767.png" title=" Fernando clicks on Input Model" width="1366"/>
+                <img src="d91f13af8d9320ab966fbb781d21f9698554bdc9afa6861e7feac546c59e8767.png" title=" Fernando clicks on Input Model" width="1366"/>
+                <img src="d91f13af8d9320ab966fbb781d21f9698554bdc9afa6861e7feac546c59e8767.png" title=" Fernando filtro opencart (completed)" width="1366"/>
+                <img src="d91f13af8d9320ab966fbb781d21f9698554bdc9afa6861e7feac546c59e8767.png" title=" When Consult the information of the product return department
+| username | password | option_sales | return_id | order_id | customer | product | model | status | info_pages |
+| demo | demo | Returns | 38591 | 16537 | wdsqa ascas | HP LP3065 | Product 21 | Awaiting Products | Showing 1 to 1 of 1 (1 Pages) | (completed)" width="1366"/>
+                <img src="d91f13af8d9320ab966fbb781d21f9698554bdc9afa6861e7feac546c59e8767.png" title=" Then Know the list of existing products in return" width="1366"/>
+                <img src="d91f13af8d9320ab966fbb781d21f9698554bdc9afa6861e7feac546c59e8767.png" title=" Example: {username=demo, password=demo, option_sales=Returns, return_id=38591, order_id=16537, customer=wdsqa ascas, product=HP LP3065, model=Product 21, status=Awaiting Products, info_pages=Showing 1 to 1 of 1 (1 Pages)} (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.90</span>
+</div>
+</body>
+</html>
