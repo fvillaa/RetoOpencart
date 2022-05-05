@@ -13,5 +13,5 @@ Feature: filtroOpencart
    Examples:
      | username | password | option_sales | return_id | order_id | customer    | product   | model      | status            | info_pages                    |
      | demo     | demo     | Returns      | 38591     | 16537    | wdsqa ascas | HP LP3065 | Product 21 | Awaiting Products | Showing 1 to 1 of 1 (1 Pages) |
-     | demo     | demo     | Orders       | 38591     | 16537    | wdsqa ascas | HP LP3065 | Product 21 | Awaiting Products | Showing 1 to 1 of 1 (1 Pages) |
+     | demo     | demo     | Returns      | 00000     | 16537    | wdsqa ascas | HP LP3065 | Product 21 | Awaiting Products | Showing 1 to 1 of 1 (1 Pages) |
      | demo     | demo     | Returns      | 38591     |          |             |           |            | Awaiting Products | Showing 1 to 1 of 1 (1 Pages) |
