@@ -1,4 +1,4 @@
-package co.com.choucair.certification.retoopencart.taks;
+package co.com.choucair.certification.retoopencart.tasks;
 
 import co.com.choucair.certification.retoopencart.userinterface.OpenPage;
 import net.serenitybdd.screenplay.Actor;

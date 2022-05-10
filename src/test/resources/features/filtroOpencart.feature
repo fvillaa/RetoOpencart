@@ -6,8 +6,9 @@ Feature: filtroOpencart
                    tab of the opencart page
   Given User of the Opencart page
     When Consult the information of the product return department
+
       | username   | password   | option_sales   | return_id   | order_id   | customer   | product   | model   | status   | info_pages   |
-      | <username> | <password> | <option_sales> | <return_id> | <order_id> | <customer> | <product> | <model> | <status> | <info_pages>|
+      | <username> | <password> | <option_sales> | <return_id> | <order_id> | <customer> | <product> | <model> | <status> | <info_pages> |
     Then Know the list of existing products in return
 
    Examples:

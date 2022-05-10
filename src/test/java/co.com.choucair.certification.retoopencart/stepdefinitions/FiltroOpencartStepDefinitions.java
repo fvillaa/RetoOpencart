@@ -1,8 +1,8 @@
 package co.com.choucair.certification.retoopencart.stepdefinitions;
 
 import co.com.choucair.certification.retoopencart.model.DataOpencart;
-import co.com.choucair.certification.retoopencart.taks.OpenUp;
-import co.com.choucair.certification.retoopencart.taks.FiltroOpencart;
+import co.com.choucair.certification.retoopencart.tasks.OpenUp;
+import co.com.choucair.certification.retoopencart.tasks.FiltroProductReturns;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -23,7 +23,7 @@ public void setStage() {OnStage.setTheStage(new OnlineCast()); }
 
     @When("^Consult the information of the product return department$")
     public void consultTheInformationOfTheProductReturnDepartment(List<DataOpencart> dataOpencart) {
-        OnStage.theActorInTheSpotlight().attemptsTo(FiltroOpencart.the(dataOpencart.get(0)));
+        OnStage.theActorInTheSpotlight().attemptsTo(FiltroProductReturns.the(dataOpencart.get(0)));
     }
 
     @Then("^Know the list of existing products in return$")
